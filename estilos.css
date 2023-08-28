@@ -1,3 +1,8 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans:wght@600&family=Lobster&display=swap');
+
+
 /* Reset de Estilos */
 * {
     margin: 0; /* zerar a margem de todos os elementos */
@@ -5,15 +10,14 @@
     box-sizing: border-box; /* incluir padding e borda no cálculo do tamanho do elemento */
 }
 
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: Josefin Sans;
+    background-color: #dadf9c;
 }
 
 
 header {
-    background-color: #333;
+    background-color: #485026;
     color: #fff;
     text-align: center;
     
@@ -29,7 +33,7 @@ nav ul {
 
 nav li {
     display: inline; /* Deixa os itens da lista em linha */
-    margin-right: 20px; /* Adiciona um espaçamento de 20px entre os itens da lista */
+    margin-right: 10px; /* Adiciona um espaçamento de 20px entre os itens da lista inicio*/
 }
 
 nav a {
@@ -46,9 +50,9 @@ main {
 .card {
     width: calc(33.33% - 20px); /* 33.33% - 20px */
     margin: 10px; /* margem de 10px para cima e para baixo */
-    padding: 20px;
+    padding: 30px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     text-align: center;
     float: left; /* flutua o elemento para a esquerda */
 }
@@ -59,17 +63,17 @@ main {
 }
 
 .card button {
-    background-color: #333;
+    background-color: #485026;
     color: #fff;
-    border: none;
-    padding: 8px 16px;
+    border-radius: 20px;
+    padding: 16px 16px;
     margin-top: 10px;
     cursor: pointer; /* Muda o cursor do mouse */
     transition: background-color 0.3s ease; /* Adiciona uma transição suave */
 }
 
 .card button:hover {
-    background-color: #555; /* Muda a cor de fundo ao passar o mouse */
+    background-color: #6d7937; /* Muda a cor de fundo ao passar o mouse */
 }
 
 
@@ -81,3 +85,17 @@ footer {
     padding: 1rem;
 }
 
+ul li a:hover{
+    text-transform: capitalize;
+    color:rgb(189, 181, 181);
+    border-bottom: solid 2px;
+}
+
+
+.logo img {
+    width: 60px;
+    height: auto;
+    margin-left: 2rem;
+    
+    float: left;
+}

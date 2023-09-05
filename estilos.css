@@ -1,13 +1,14 @@
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans:wght@600&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans:wght@600&family=Lobster&display=swap');
 
 
 /* Reset de Estilos */
 * {
-    margin: 0; /* zerar a margem de todos os elementos */
-    padding: 0; /* zerar o espaçamento interno de todos os elementos */
-    box-sizing: border-box; /* incluir padding e borda no cálculo do tamanho do elemento */
+    margin: 0;
+    /* zerar a margem de todos os elementos */
+    padding: 0;
+    /* zerar o espaçamento interno de todos os elementos */
+    box-sizing: border-box;
+    /* incluir padding e borda no cálculo do tamanho do elemento */
 }
 
 body {
@@ -20,7 +21,7 @@ header {
     background-color: #485026;
     color: #fff;
     text-align: center;
-    
+
     /* assim (cima, baixo, esquerda, direita) */
     padding: 20px 20px 20px 20px;
     /* ou 20px em todas as direções */
@@ -28,38 +29,51 @@ header {
 }
 
 nav ul {
-    list-style: none; /* Remove o estilo da lista */
+    list-style: none;
+    /* Remove o estilo da lista */
 }
 
 nav li {
-    display: inline; /* Deixa os itens da lista em linha */
-    margin-right: 10px; /* Adiciona um espaçamento de 20px entre os itens da lista inicio*/
+    display: inline;
+    /* Deixa os itens da lista em linha */
+    margin-right: 10px;
+    /* Adiciona um espaçamento de 20px entre os itens da lista inicio*/
 }
 
 nav a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    font-weight: bold; /* Deixa o texto em negrito */
-    color: #fff; /* Cor do texto */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    color: #fff;
+    /* Cor do texto */
 }
 
 main {
-    padding: 20px; /* espaçamento interno */
-    overflow: hidden; /* esconde o conteúdo que ultrapassa o tamanho do elemento */
+    padding: 20px;
+    /* espaçamento interno */
+    overflow: hidden;
+    /* esconde o conteúdo que ultrapassa o tamanho do elemento */
 }
 
 .card {
-    width: calc(33.33% - 20px); /* 33.33% - 20px */
-    margin: 10px; /* margem de 10px para cima e para baixo */
+    width: calc(33.33% - 20px);
+    /* 33.33% - 20px */
+    margin: 10px;
+    /* margem de 10px para cima e para baixo */
     padding: 30px;
     background-color: #fff;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     text-align: center;
-    float: left; /* flutua o elemento para a esquerda */
+    float: left;
+    /* flutua o elemento para a esquerda */
 }
 
 .card img {
-    max-width: 100%; /* Define a largura máxima da imagem */
-    height: 300px; /* Define a altura da imagem */
+    max-width: 100%;
+    /* Define a largura máxima da imagem */
+    height: 300px;
+    /* Define a altura da imagem */
 }
 
 .card button {
@@ -68,12 +82,15 @@ main {
     border-radius: 20px;
     padding: 16px 16px;
     margin-top: 10px;
-    cursor: pointer; /* Muda o cursor do mouse */
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+    cursor: pointer;
+    /* Muda o cursor do mouse */
+    transition: background-color 0.3s ease;
+    /* Adiciona uma transição suave */
 }
 
 .card button:hover {
-    background-color: #6d7937; /* Muda a cor de fundo ao passar o mouse */
+    background-color: #6d7937;
+    /* Muda a cor de fundo ao passar o mouse */
 }
 
 
@@ -85,9 +102,9 @@ footer {
     padding: 1rem;
 }
 
-ul li a:hover{
+ul li a:hover {
     text-transform: capitalize;
-    color:rgb(189, 181, 181);
+    color: rgb(189, 181, 181);
     border-bottom: solid 2px;
 }
 
@@ -96,6 +113,104 @@ ul li a:hover{
     width: 60px;
     height: auto;
     margin-left: 2rem;
-    
+
     float: left;
 }
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    overflow: hidden;
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #777;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555;
+}
+
+.radio-group label {
+    display: inline;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.input-check {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.input-check input[type="checkbox"]+label {
+    display: inline-block;
+    font-weight: normal;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    height: 120px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer; /
+  }
+  
+  
+  button[type="reset"] {
+    background-color: #6c757d;
+  }
+  
+  
+  button:hover {
+    background-color: #0056b3;
+  }
